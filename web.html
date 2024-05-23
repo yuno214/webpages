@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECOMMENDATIONS BY MBTI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .search {
+       display: flex;
+       align-items: center;
+    }
+    .search input {
+       width: 148px;
+       height: 24px;
+       font-size: 14px;
+       border: none;
+       border-bottom: 1px black solid;
+       margin-right: 10px;
+    }
+
+    .search button {
+       font-size: 35px;
+       border: none;
+       background-color: white;
+       padding: 6px 12px;
+       border-radius: 15px;
+       color: black;
+       cursor: pointer;
+    }
+    
+    /* 초기화 */
+    * {
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* 제목 */
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        position: relative;
+    }
+
+    h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: lighter;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* 메인페이지 구성 */
+    .container {
+        overflow: hidden;
+        width: 1080px;
+        margin: 0 auto;
+        margin-bottom: 8px;  
+    }
+
+    /* 메인페이지 메뉴 */
+    .gnb {
+        padding: 8px 0px;
+        display: inline-block;
+        margin-left: 80px;
+        margin-right: 80px;
+        text-align: center;
+    }
+    .gnb > a {
+        list-style-type: none;
+        margin-left: 10px;
+        line-height: 10px;
+        display: inline-block;
+    }
+    .gnb > a:first-child {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 40px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .gnb :hover {
+        color: darkblue;
+    }
+    .gnb :active {
+        color: black;
+    }
+
+    /* 하이퍼링크 디자인 없앰 */
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* 메인페이지 내용 */
+    div.section {
+        border: 1px solid black;
+        margin: 3px;
+        padding: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: darkgray;
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>RECOMMENDATIONS BY <b>MBTI</b> TYPE</h1>
+        <form action="https://search.naver.com/search.naver" style="margin-left: auto;">
+            <div class="search">
+                <input type="text" name="query" value="">
+                <button type="submit">⌕</button>
+            </div>
+        </form>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://yuno214.github.io/d/">
+            <img src="https://cdn-icons-png.flaticon.com/512/2608/2608207.png" alt="Q&A" width="30">
+        </a>
+        &nbsp;&nbsp;
+    </div>
+
+    <br>
+    <hr>
+    <div class="container">
+        <ul class="gnb">
+            <a href="https://naver.com">MBTI</a>
+        </ul>
+        <ul class="gnb">
+            <a href="https://google.com">BOOK</a>
+        </ul>
+        <ul class="gnb">
+            <a href="https://naver.com">MUSIC</a>
+        </ul>
+        <ul class="gnb">
+            <a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC">TEST</a>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+    <div class="footer"></div>
+</body>
+</html>
+
+
+
+
+
